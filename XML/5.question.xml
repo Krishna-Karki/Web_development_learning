@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="4.styling.xsl" type="txt/xsl"?>
+
+
+<BOOKS xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="5.question.xsd">
+
+    <BOOK ISBN_NO="1">
+
+        <BOOK_NAME>Meditations</BOOK_NAME>
+        <AUTHOR>Marcus Aurelius</AUTHOR>
+        <PRICE>500</PRICE>
+        <TOTAL_PAGES>300</TOTAL_PAGES>
+
+        <PUBLISHER>
+            <PUBLISHER_NAME>Unknown</PUBLISHER_NAME>
+            <PUBLISHER_DATE>2050-05-10</PUBLISHER_DATE>
+
+            <ADDRESS>
+                <CITY>Unknown</CITY>
+                <COUNTRY>Unknown</COUNTRY>
+            </ADDRESS>
+
+        </PUBLISHER>
+
+    </BOOK>
+
+</BOOKS>

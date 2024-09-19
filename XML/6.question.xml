@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?xml-stylesheet href="6.question.xsl" type="txt/xsl"?>
+
+<Products xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xsi:noNamespaceSchemaLocation="6.question.xsd"
+>
+
+    <product>
+        <id>10</id>
+        <name>New product</name>
+        <code>025</code>
+        <category>Grocery</category>
+        <price currency="NPR">200.5</price>
+        <stock>12</stock>
+    </product>
+
+
+    <product>
+        <id>1</id>
+        <name>New product</name>
+        <code>025</code>
+        <category>Grocery</category>
+        <price currency="NPR">200.5</price>
+        <stock>12</stock>
+    </product>
+
+</Products>

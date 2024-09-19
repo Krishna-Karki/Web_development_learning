@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Cars [
+    <!ELEMENT Cars (name,speed,price)>
+    <!ELEMENT name (#PCDATA)>
+    <!ELEMENT speed (#PCDATA)>
+    <!ELEMENT price (#PCDATA)>
+]>
+
+<Cars>
+
+  
+        <name>Audi</name>
+        <speed>300 km/hr </speed>
+        <price>$200000</price> 
+
+</Cars>

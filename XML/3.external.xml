@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<!DOCTYPE Cars SYSTEM "3.externalvalid.dtd"[
+   
+]>
+
+<Cars>
+        <name>Audi</name>
+        <speed>300 km/hr </speed>
+        <price>$200000</price> 
+
+</Cars>

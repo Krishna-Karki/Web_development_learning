@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Introduction</title>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Internal CSS -->
+     <style>
+            /* Universal selector */
+            *{
+                font-size: 20px;
+            }
+            /* Class Selector */
+            .container{
+                color: blue;
+            }
+            /* ID selector */
+            #id2{
+                color: green;
+            }
+            .container{
+                color: yellow;
+            }
+            /* Element selector */
+            p{
+                color: #000;
+            }
+     </style>
+</head>
+
+<body>
+    
+    <div class="container" style="">
+        <div class="box" id="id1">Box 1</div>
+        <div class="box" id="id2">Box 2</div>
+
+        <!-- Inline CSS -->
+        <div class="box" id="id3" style="color: red;">Box 3</div>
+        <hr>
+        <p>Hey, Karan</p>
+    </div>
+
+
+
+</body>
+
+</html>

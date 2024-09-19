@@ -1,0 +1,4 @@
+<!ELEMENT Cars (name,speed,price)>
+<!ELEMENT name (#PCDATA)>
+<!ELEMENT speed (#PCDATA)>
+<!ELEMENT price (#PCDATA)>

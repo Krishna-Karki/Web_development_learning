@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<Cars xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+xsi:noNamespaceSchemaLocation="4.schemavalid.xsd"
+> 
+    <car>
+        <name>Audi</name>
+        <speed>300</speed>
+        <price>200000</price>
+    </car>
+
+    <car>
+        <name>Mercedes</name>
+        <speed>200</speed>
+        <price>100000</price>
+    </car>
+
+</Cars>
