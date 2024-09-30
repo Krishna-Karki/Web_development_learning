@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <link rel="stylesheet" href="Q8.css">
+
+    </style>
+</head>
+<body>
+
+    <form class="formclass" id="myform">
+
+        <div>
+        <label for="email">Email:</label>
+        <input type="email" name="email" id="email" size="20">
+    </div>
+    <br>
+    <div>
+        <label for="password">Password:</label>
+        <input type="password" name="password" id="password" size="20">
+    </div>
+    <br>
+    <div>
+        <label for="phone">Mobile number:</label>
+        <input type="tel" name="phone" id="phone" size="20" required>
+    </div>
+    <br>
+    
+        <button type="submit">Submit</button>
+
+    </form>
+
+    <script>
+
+        let form = document.getElementById('myform');
+
+        form.addEventListener('submit',function(event){
+            event.preventDefault();
+
+            let email = document.getElementById('email').value;
+            let password = document.getElementById('password').value;
+            let phone = document.getElementById('phone');
+
+            let emailpattern = /^[^\d]/;
+            if(!emailpattern.test(email)){
+                alert("Invalid email.");
+                return;
+            }
+            if(password.length<8||password.legth>12){
+                alert("Password must be between 8 and 12 characters");
+                return;
+            }
+            const mobile = /^\+977(97| 98)[0-9]{8}$/;
+            if(!mobile.test(phone)){
+                alert("Mobile number must be exactly 10 digits");
+                return;
+            }
+            alert("Form successfully submitted");
+        });
+
+    </script>
+
+</body>
+</html>

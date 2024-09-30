@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Inserting</title>
+</head>
+<body>
+    
+    <div id="container">
+        This is container.
+    </div>
+    <button id="btn">
+        Click to change.
+    </button>
+
+
+    <script>
+
+        let container = document.getElementById('container');
+        let btn = document.getElementById('btn');
+
+        btn.addEventListener('click',function(){
+
+            //container.innerText = "container overrride";
+
+            //container.innerHTML = "<b>container</b>";
+
+            let content = document.createElement('div');
+            content.innerText = "new line on new div";
+
+            btn.addEventListener('click',function(){
+                container.after(content);
+                container.remove();
+            })
+
+
+
+
+        })
+
+    </script>
+</body>
+</html>

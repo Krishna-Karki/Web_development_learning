@@ -1,0 +1,86 @@
+<!-- write a js to input names and age of 10 different person in two different arrays and display the name of the oldest person on a text box on after clicking on a display button
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 6</title>
+</head>
+<body>
+    
+    <form id="newform">
+        <div>
+            <label for="name1">Name: </label>
+            <input type="text" name="name1" id="name1" required>
+    
+            <label for="age1">Age: </label>
+            <input type="number1" name="age1" id="age1" required>
+        </div>
+
+        <div>
+            <label for="name2">Name: </label>
+            <input type="text" name="name2" id="name2" required>
+    
+            <label for="age2">Age: </label>
+            <input type="number" name="age2" id="age2" required>
+        </div>
+
+        <div>
+            <label for="name3">Name: </label>
+            <input type="text" name="name3" id="name3" required>
+    
+            <label for="age3">Age: </label>
+            <input type="number" name="age3" id="age3" required>
+        </div>
+        <div>
+            <label for="name4">Name: </label>
+            <input type="text" name="name4" id="name4" required>
+    
+            <label for="age4">Age: </label>
+            <input type="number" name="age4" id="age4" required>
+        </div>
+        <div>
+            <label for="name5">Name: </label>
+            <input type="text" name="name5" id="name5" required>
+    
+            <label for="age5">Age: </label>
+            <input type="number" name="age5" id="age5" required>
+        </div>
+   
+        <br>
+        <hr>
+
+        <button type="submit">Submit</button>
+
+        <br>
+        <hr>
+        <label for="oldest">Oldest Person: </label>
+        <input type="text" name="oldest" id="oldest">
+    </form>
+    
+
+    <script>
+        let form = document.getElementById('newform');
+        form.addEventListener('click',function(event){
+            event.preventDefault();
+            let names = [];
+            let ages = [];
+
+            for (let i=1; i<=4; i++){
+                n = document.getElementById(`name`+i).value;
+                a = document.getElementById(`age`+i).value;
+                names.push(n);
+                ages.push(Number(a));
+            }
+            let maxage = Math.max(...ages);
+            let index = ages.indexOf(maxage);
+            let answer = names[index];
+            document.getElementById('oldest').value = answer;
+        })
+
+    </script>
+
+</body>
+</html>

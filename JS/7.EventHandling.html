@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Event Handling</title>
+</head>
+<body>
+    <div class="container" id="container">
+        This is container.
+    </div>
+
+    <button id="btn" onclick="change()">
+        Click to change.
+    </button>
+
+
+    <script>
+        // function change(){
+        //     let container = document.getElementById('container');
+
+        //     container.innerText += "This is changed text."
+        // }
+
+        let btn = document.getElementById('container');
+        btn.addEventListener('click',function(){
+            let container = document.getElementById("container");
+            container.innerText = "New change";
+        })
+    </script>
+</body>
+</html>

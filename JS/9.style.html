@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Style</title>
+</head>
+<body>
+    <div id="container">
+        This is container.
+    </div>
+    <button id="btn">
+        Click to style.
+    </button>
+
+    <script>
+        // document.getElementById('container').style.color = 'blue';
+
+        let container = document.getElementById('container');
+        let btn = document.getElementById('btn');
+
+        btn.addEventListener('click',function(){
+            container.style.color='green';
+            container.style.fontSize='20px';
+            container.style.border='2px solid black';   
+        })
+    </script>
+</body>
+</html>

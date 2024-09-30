@@ -1,0 +1,30 @@
+<!-- explain length property of js strings with syntax. convert a lower case input string into upper case.-->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Question 2</title>
+</head>
+<body>
+    
+
+    <script>
+        // in js for finding the length of the string text.variablename will provide the length of the string
+
+        let text = "JavaScript";
+        let length = text.length;
+        console.log("The length of string is : "+length);
+
+        let input = prompt("Enter a lowercase string: " , "");
+        if(input != ""){
+            let answer = input.toUpperCase();
+            console.log(answer);
+        }
+        else{
+            console.log("Wrong Input");
+        }
+    </script>
+    
+</body>
+</html>
